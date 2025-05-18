@@ -4,6 +4,9 @@
     "description": "A fantasy RPG system based on the Enneagram of Personality.",
     "version": "2025.5.18.0",
     "url": "https://github.com/bmurr3/fvttnineshadows",
+    "compatibility": {
+        "minimum": 13
+    },
     "authors": [{
         "name": "Will Waller",
         "email": "williammurray98@gmail.com",
@@ -11,15 +14,7 @@
     }],
     "esmodules": ["fvttnineshadows.mjs"],
     "styles": ["styles/default-styles.css"],
-    "packs": [{
-        "name": "monsters",
-        "label": "Monsters",
-        "type": "Actor"
-    }, {
-        "name": "items",
-        "label": "Items",
-        "type": "Item"
-    }],
+    "packs": [],
     "languages": [{
         "lang": "en",
         "name": "English",
@@ -30,23 +25,5 @@
         "name": "French",
         "path": "lang/fr.json"
     }],
-    "documentTypes": {
-        "Actor": {
-            "hero": { "htmlFields": ["background.biography"] },
-            "villain": { "htmlFields": ["background.biography"] },
-            "pawn": {}
-        },
-        "Item": {
-            "weapon": {},
-            "spell": {}
-        }
-    },
-    "socket": false,
-    "initiative": "1d20",
-    "grid": {
-        "distance": 10,
-        "units": "ft"
-    },
-    "primaryTokenAttribute": "resources.health",
-    "secondaryTokenAttribute": "resources.power"
+    "documentTypes": {}
 }
