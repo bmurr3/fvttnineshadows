@@ -1,5 +1,5 @@
 {
-    "id": "fvtt-nine-shadows",
+    "id": "fvttnineshadows",
     "title": "Nine Shadows",
     "description": "A fantasy RPG system based on the Enneagram of Personality.",
     "version": "2025.5.18.0",
@@ -7,5 +7,40 @@
         "name": "Will Waller",
         "email": "williammurray98@gmail.com",
         "discord": "wwally2022"
-    }]
+    }],
+    "esmodules": ["fvttnineshadows.mjs"],
+    "styles": ["styles/default-styles.css"],
+    "packs": [{
+        "name": "monsters",
+        "label": "Monsters",
+        "type": "Actor"
+    }, {
+        "name": "items",
+        "label": "Items",
+        "type": "Item"
+    }],
+    "languages": [{
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json"
+    }],
+    "documentTypes": {
+        "Actor": {
+            "hero": { "htmlFields": ["background.biography"] },
+            "villain": { "htmlFields": ["background.biography"] },
+            "pawn": {}
+        },
+        "Item": {
+            "weapon": {},
+            "spell": {}
+        }
+    },
+    "socket": false,
+    "initiative": "1d20",
+    "grid": {
+        "distance": 10,
+        "units": "ft"
+    },
+    "primaryTokenAttribute": "resources.health",
+    "secondaryTokenAttribute": "resources.power"
 }
