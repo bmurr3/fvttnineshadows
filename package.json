@@ -5,10 +5,16 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "npm run clean"
+        "build": "npm run clean && npm run build:packs && vite build",
+        "build:packs": "tsx ./build/build-packs.ts",
+        "clean": "tsx ./build/clean.ts"
     },
     "author": "Will Waller",
     "engines": {
         "node": ">=20.15.0"
+    },
+    "devDependencies": {
+        "tsx": "^4.19.3",
+        "vite": "^6.2.0"
     }
 }
