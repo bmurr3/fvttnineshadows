@@ -25,5 +25,20 @@
         "name": "French",
         "path": "lang/fr.json"
     }],
-    "documentTypes": {}
+    "documentTypes": {
+        "Actor": {
+            "pc": {
+                "htmlFields": ["details.biography.value", "details.biography.public"]
+            },
+            "npc": {
+                "htmlFields": ["details.biography.value", "details.biography.public"]
+            }
+        }
+    },
+    "flags": {
+        "hotReload": {
+            "extensions": ["css", "hbs", "json"],
+            "paths": ["lang"]
+        }
+    }
 }
