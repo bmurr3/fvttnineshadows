@@ -4,4 +4,5 @@
 **/LOG*
 **/MANIFEST-*
 
+dist/
 node_modules/
