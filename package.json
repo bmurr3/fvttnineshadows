@@ -1,0 +1,14 @@
+{
+    "name": "foundry-nsv1",
+    "version": "2025.5.18.0",
+    "description": "",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "npm run clean"
+    },
+    "author": "Will Waller",
+    "engines": {
+        "node": ">=20.15.0"
+    }
+}
