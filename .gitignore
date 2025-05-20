@@ -3,3 +3,7 @@
 **/LOCK
 **/LOG*
 **/MANIFEST-*
+
+dist/
+doc/
+node_modules/

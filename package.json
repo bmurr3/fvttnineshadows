@@ -1,0 +1,31 @@
+{
+    "name": "foundry-nsv1",
+    "version": "2025.5.18.0",
+    "description": "",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "npm run clean && npm run build:packs && vite build",
+        "build:packs": "tsx ./build/build-packs.ts",
+        "clean": "tsx ./build/clean.ts"
+    },
+    "author": "Will Waller",
+    "engines": {
+        "node": ">=20.15.0"
+    },
+    "devDependencies": {
+        "@sveltejs/vite-plugin-svelte": "^5.0.3",
+        "@types/fs-extra": "^11.0.4",
+        "@types/jest": "^29.5.14",
+        "@types/jquery": "^3.5.32",
+        "@types/node": "^22.13.10",
+        "@types/tooltipster": "^0.0.35",
+        "fs-extra": "^11.3.0",
+        "tsx": "^4.19.3",
+        "typescript": "^5.3.3",
+        "vite": "^6.2.0",
+        "vite-plugin-checker": "^0.8.0",
+        "vite-plugin-static-copy": "^2.3.0",
+        "vite-tsconfig-paths": "^5.1.4"
+    }
+}
