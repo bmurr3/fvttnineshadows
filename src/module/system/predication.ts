@@ -36,7 +36,7 @@ class Predicate extends Array<PredicateStatement> {
         if (this.length === 0) {
             return true;
         } else if (!this.isValid) {
-            console.warn("PF2e System | The provided predicate set is malformed.");
+            console.warn("NS System | The provided predicate set is malformed.");
             return false;
         }
 
@@ -95,7 +95,7 @@ class Predicate extends Array<PredicateStatement> {
                 case "lte":
                     return leftValues.some((l) => rightValues.every((r) => l <= r));
                 default:
-                    console.warn("PF2e System | Malformed binary operation encountered");
+                    console.warn("NS System | Malformed binary operation encountered");
                     return false;
             }
         }

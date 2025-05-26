@@ -1,7 +1,7 @@
 {
     "name": "foundry-types",
     "version": "4.4.2",
-    "description": "Type definitions for the Foundry VTT client, used by the PF2e system",
+    "description": "Type definitions for the Foundry VTT client, used by the NS system",
     "private": true,
     "type": "module",
     "keywords": [
@@ -17,7 +17,7 @@
         "tinymce": "^6.1.2",
         "typescript": "^5.3.3"
     },
-    "author": "the pf2e system developers",
+    "author": "the ns system developers",
     "license": "Apache-2.0",
     "types": "./index.d.ts"
 }
